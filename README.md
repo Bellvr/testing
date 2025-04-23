@@ -1,4 +1,4 @@
-"# testing" 
+###  README  ###
 este es un repositorio de...
 ### NOMBRE Y APELLIDO: ###
 Belinda Verbo
