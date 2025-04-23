@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tp1</title>
+</head>
+<body>
+    <header>
+        <img src="./img/agenda.png" alt="agenda-img">
+        <h1 class="subrayado">AGENDA-</h1>
+    </header>
+    <main>
+        <div class="contenedor-form">
+            <p>Nueva Tarea-</p>
+            <form id="form">
+                <div>
+                    <label for="tarea">Tarea:</label>
+                    <input id="tarea" type="text" placeholder="Nombre de la tarea">
+                </div>
+            <div>
+            <label for="prioridad">Prioridad:</label>
+            <select name="prioridad" id="prioridad">
+                <option value="alto">Alto</option>
+                <option value="medio">Medio</option>
+                <option value="bajo">Bajo</option>
+            </select>
+             </div>
+             <div>
+                <label for="categoria">Categoria:</label>
+                <select name="categorias" id="categoria">
+                    <option value="colegio">Colegio</option>
+                    <option value="instituto">Instituto</option>
+                    <option value="kiosco">Kiosco</option>
+                </select>
+             </div>
+                <button type="submit">+</button>
+            </form>
+        </div>
+        <div class="contenedor-filtro">
+            <div class="filtro">
+                <label for="filtrar">Filtrar</label>
+                <select onchange="filtrarTareas()" name="Categorias" id="filtrar">
+                    <option value="" disabled selected>Categorías</option>
+                    <option  value="">Todo</option>
+                    <option  value="colegio">Colegio</option>
+                    <option  value="instituto">Instituto</option>
+                    <option  value="kiosco">Kiosco</option>
+                </select>
+            </div>
+            <div class="tarjetas" id="tarjetas"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="copy">
+            <p>© Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="./script.js"></script>
